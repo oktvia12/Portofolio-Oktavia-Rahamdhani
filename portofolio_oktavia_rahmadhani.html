@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Oktavia Rahmadhani - Management Professional</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'rose': {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Pola latar belakang feminin yang elegan */
+        .hero-pattern {
+            background-color: #fff1f2;
+            background-image: radial-gradient(#fda4af 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .skill-card:hover i {
+            transform: scale(1.1) translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .leaf-decoration {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 0;
+            color: #be123c;
+        }
+    </style>
+</head>
+<body class="bg-rose-50 text-slate-800 font-sans antialiased selection:bg-rose-400 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-rose-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-2xl text-rose-700 tracking-tight flex items-center gap-2">
+                    <i class="fas fa-spa text-rose-400"></i> OR<span class="text-rose-300">.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-slate-600 hover:text-rose-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</a>
+                        <a href="#about" class="text-slate-600 hover:text-rose-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tentang</a>
+                        <a href="#skills" class="text-slate-600 hover:text-rose-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Keahlian</a>
+                        <a href="#contact" class="bg-rose-500 text-white hover:bg-rose-600 px-5 py-2.5 rounded-full text-sm font-medium transition-colors shadow-md shadow-rose-200">Hubungi Saya</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-rose-600 hover:text-rose-800 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-rose-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50">Beranda</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50">Tentang</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-rose-600 hover:bg-rose-50">Keahlian</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-rose-600 hover:bg-rose-50">Hubungi Saya</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern min-h-screen flex items-center relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-gradient-to-br from-white/60 via-rose-50/80 to-rose-200/50 z-0"></div>
+        
+        <!-- Decorative Leaves -->
+        <i class="fas fa-leaf leaf-decoration text-6xl top-32 left-10 transform -rotate-45"></i>
+        <i class="fas fa-spa leaf-decoration text-8xl bottom-20 right-20 transform rotate-12"></i>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left md:w-3/5 lg:w-1/2 mb-12 md:mb-0">
+                <p class="text-rose-600 font-semibold tracking-wider uppercase mb-3 text-sm md:text-base">Halo, Selamat Datang</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-slate-800">
+                    Saya <span class="text-rose-600">Oktavia</span> Rahmadhani
+                </h1>
+                <h2 class="text-lg md:text-xl text-slate-600 font-light mb-8 leading-relaxed">
+                    Profesional di bidang <strong class="text-rose-500 font-semibold">Manajemen</strong> yang berdedikasi untuk menciptakan strategi efektif, membangun tim yang solid, dan mendorong pertumbuhan operasional yang berkelanjutan.
+                </h2>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#about" class="bg-rose-500 hover:bg-rose-600 text-white font-medium py-3 px-8 rounded-full shadow-lg shadow-rose-500/30 transition-all hover:-translate-y-1 text-center">
+                        Kenali Saya
+                    </a>
+                    <a href="#contact" class="bg-white border-2 border-rose-200 hover:border-rose-400 text-rose-600 font-medium py-3 px-8 rounded-full transition-all text-center shadow-sm">
+                        Mari Berdiskusi
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-2/5 flex justify-center mt-16 md:mt-0">
+                 <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-white p-3 rounded-[2rem] shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500 border border-rose-100 mx-auto">
+                    <!-- Efek bayangan pink di belakang foto -->
+                    <div class="absolute inset-0 bg-rose-400 rounded-[2rem] blur-2xl opacity-20 -z-10 translate-y-4"></div>
+                    
+                    <!-- Foto Profil -->
+                    <img src="image_f5047a.jpg" alt="Foto Profil Oktavia Rahmadhani" class="w-full h-full object-cover rounded-[1.5rem] relative z-10 block" style="object-position: center top;">
+                    
+                    <!-- Aksen Dekorasi Daun -->
+                    <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center z-20 text-rose-500 text-2xl border border-rose-50">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center justify-center gap-2 px-4 py-2 bg-rose-50 text-rose-600 rounded-full text-sm font-semibold mb-4 border border-rose-100">
+                    <i class="fas fa-seedling"></i> Tentang Saya
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Mengubah Visi Menjadi Aksi</h2>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    Sebagai seorang yang berkecimpung di dunia manajemen, saya percaya bahwa keberhasilan sebuah organisasi tidak hanya diukur dari angka, melainkan dari bagaimana orang-orang di dalamnya berkolaborasi. Saya memiliki minat besar dalam manajemen operasional, perencanaan strategis, dan pengembangan sumber daya manusia.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-rose-50 p-8 rounded-3xl text-center border border-rose-100 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-rose-500 shadow-sm">
+                        <i class="fas fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Kepemimpinan Hati</h3>
+                    <p class="text-slate-600 text-sm">Memimpin dengan empati untuk menciptakan lingkungan kerja yang positif dan produktif.</p>
+                </div>
+                <div class="bg-rose-50 p-8 rounded-3xl text-center border border-rose-100 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-rose-500 shadow-sm">
+                        <i class="fas fa-chart-pie text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Fokus Solusi</h3>
+                    <p class="text-slate-600 text-sm">Menganalisis masalah dan merumuskan strategi yang efisien untuk mencapai target.</p>
+                </div>
+                <div class="bg-rose-50 p-8 rounded-3xl text-center border border-rose-100 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-rose-500 shadow-sm">
+                        <i class="fas fa-handshake text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Kolaborasi Tim</h3>
+                    <p class="text-slate-600 text-sm">Membangun sinergi antar departemen untuk memastikan kelancaran operasional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-rose-50 relative">
+        <!-- Dekorasi Background -->
+        <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white text-rose-600 rounded-full text-sm font-semibold mb-4 shadow-sm">
+                    <i class="fas fa-star"></i> Kompetensi
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Keahlian Manajerial</h2>
+                <p class="text-slate-600">Berbekal pengetahuan konseptual dan praktik terbaik dalam mengelola sumber daya dan mencapai visi perusahaan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skill 1 -->
+                <div class="skill-card bg-white p-8 rounded-3xl shadow-sm border border-rose-100 hover:shadow-xl hover:border-rose-300 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 mb-6 group-hover:bg-rose-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-tasks text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Manajemen Operasional</h3>
+                    <p class="text-slate-600 text-sm">Pengawasan proses harian dan memastikan efisiensi di setiap alur kerja organisasi.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card bg-white p-8 rounded-3xl shadow-sm border border-rose-100 hover:shadow-xl hover:border-rose-300 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 mb-6 group-hover:bg-rose-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-users-cog text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Kepemimpinan Tim</h3>
+                    <p class="text-slate-600 text-sm">Membimbing, memotivasi, dan mengembangkan potensi setiap individu dalam tim.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card bg-white p-8 rounded-3xl shadow-sm border border-rose-100 hover:shadow-xl hover:border-rose-300 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 mb-6 group-hover:bg-rose-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-bullseye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Perencanaan Strategis</h3>
+                    <p class="text-slate-600 text-sm">Merumuskan tujuan jangka panjang dan menyusun langkah-langkah konkret untuk mencapainya.</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card bg-white p-8 rounded-3xl shadow-sm border border-rose-100 hover:shadow-xl hover:border-rose-300 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center text-rose-600 mb-6 group-hover:bg-rose-500 group-hover:text-white transition-colors">
+                        <i class="fas fa-comments text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Komunikasi Bisnis</h3>
+                    <p class="text-slate-600 text-sm">Negosiasi, presentasi, dan kemampuan menyampaikan ide secara jelas dan persuasif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-rose-900 rounded-[3rem] p-8 md:p-16 shadow-2xl relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-rose-800 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-rose-700 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
+                
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Mari Berkolaborasi</h2>
+                        <p class="text-rose-200 mb-8 leading-relaxed text-lg">
+                            Mencari profesional manajemen untuk mengoptimalkan potensi tim atau perusahaan Anda? Silakan hubungi saya melalui formulir ini.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-rose-800/50 rounded-full flex items-center justify-center text-rose-300 border border-rose-700">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-white font-medium">oktavia.rahmadhani@email.com</p>
+                                    <p class="text-rose-300 text-sm">Email Profesional</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-rose-800/50 rounded-full flex items-center justify-center text-rose-300 border border-rose-700">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-white font-medium">Oktavia Rahmadhani</p>
+                                    <p class="text-rose-300 text-sm">LinkedIn Profile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-3xl p-8 shadow-xl">
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full bg-rose-50 border border-rose-100 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-200 transition-all" placeholder="Nama Anda" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full bg-rose-50 border border-rose-100 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-200 transition-all" placeholder="Email Anda" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full bg-rose-50 border border-rose-100 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-rose-400 focus:ring-2 focus:ring-rose-200 transition-all" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" id="submitBtn" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-3 px-4 rounded-xl transition-colors shadow-lg shadow-rose-600/30 flex justify-center items-center gap-2">
+                                <span>Kirim Pesan</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-rose-100 text-center">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+            <div class="text-2xl font-bold text-rose-700 tracking-tight mb-4 flex items-center gap-2">
+                <i class="fas fa-spa text-rose-400"></i> OR<span class="text-rose-300">.</span>
+            </div>
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 Oktavia Rahmadhani. Hak Cipta Dilindungi.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Form Submission Simulation Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.innerHTML;
+            
+            // Ubah tampilan tombol saat diklik
+            btn.innerHTML = '<span>Terkirim!</span> <i class="fas fa-check"></i>';
+            btn.classList.remove('bg-rose-600', 'hover:bg-rose-700');
+            btn.classList.add('bg-green-500', 'hover:bg-green-600', 'shadow-green-500/30');
+            
+            // Reset form
+            this.reset();
+            
+            // Kembalikan tombol setelah 3 detik
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.add('bg-rose-600', 'hover:bg-rose-700');
+                btn.classList.remove('bg-green-500', 'hover:bg-green-600', 'shadow-green-500/30');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
